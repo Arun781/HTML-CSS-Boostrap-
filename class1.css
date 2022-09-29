@@ -1,0 +1,9 @@
+.static {
+    position: static;
+    bottom:0;
+}
+/*position exchanger*/
+.fix{
+    position:fixed;
+    bottom: 0;
+}
