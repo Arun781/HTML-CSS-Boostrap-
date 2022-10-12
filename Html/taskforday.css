@@ -1,0 +1,87 @@
+body{
+    background-color:  rgb(151, 151, 218);
+    background-position: 500px;
+    background-repeat: no-repeat;
+    
+}
+.rect0{
+    border: 50px solid yellow;
+    width: 1000;
+    height: 100;
+    display: inline-block;
+}
+.rect1{
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    
+}
+.rect2{
+    border: 3px solid red;
+    height: 50px;
+    width: 50px;
+    margin: 70px;
+    display: inline-block;
+    
+}
+.rect3{
+    border: 3px solid red;
+    height: 100px;
+    width: 100px;
+}
+.rect4{
+    border: 3px solid red;
+    height: 50px;
+    width: 50px;
+    display:inline-block ;
+    margin: 100;
+}
+
+div p {
+  color: blue;
+}
+div > p {
+    color: brown;
+}
+
+
+
+/*child selector*/
+div  >  p{
+    color: brown;
+}
+/*<!--Adjacent sibling Selector-->*/
+div  +  p{
+    color: aqua;
+}
+/*general sibling selelctor*/
+div ~ p{
+    color: darkorange;
+}
+.relative{
+    position: relative;
+    left: 100px;
+    top: 0;
+}
+.absolute{
+    position: relative;
+    top: 100px;
+    right: 0;
+}
+.static{
+    position: relative;
+    top: 100px;
+    right: 0;
+}
+.DeepthiSunaina{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color:yellow;
+    font-size: 100px;
+    margin: 50px;
+}
+.imageprint{
+    position: relative;
+}

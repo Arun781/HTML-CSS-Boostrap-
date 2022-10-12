@@ -1,0 +1,10 @@
+body{
+    background-image: url(/E:\X-Workz\Web App\images\Arun.jpg/Arun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   //* background-color: cyan ;*/
+}
+.makeIt{
+    position: absolute;
+    margin: 50px;
+}
