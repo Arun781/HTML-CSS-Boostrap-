@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<Script>
+    console.log("hello World");
+    //console.log is used for.
+    //Console : its an object.
+    //log ; its a function.
+    var a; //Declaration
+    console.log(a)
+    var a; //To check data type as undefined
+    console.log(a)
+    a=10;//initialization
+    console.log(typeof(a))// to find datatype
+    console.log(a)
+    a = "Arun verrapur"//reinitilization
+    console.log(a) //reinitilization value
+    console.log(typeof(a))// to find datatype
+    a=true;
+    console.log((a))
+    console.log(typeof(a))// to find datatype
+    //the data types in JS {String.int.boolean.char.long.double.float}
+    //Why do we need a Function:-use to perform Some Task.
+    //function key word called as (Function)
+    /*function function name() {    
+    }*/
+    function display() {
+        console.log("We are learning fumction in javascript");   
+    }
+    display()
+    function add (a,b)
+    {
+        console.log(a+b)
+    }
+    add(10,20)
+    function callFromClickButton() 
+    {
+        console.log("We are callFromClickButton");   
+    } 
+    function pingMe() 
+    {
+        console.log("Hey Hello pingMe in Your free time");   
+    }
+    //to excute click on this button  14/10/2022
+    function callFromClickButton()
+    {
+        console.log("We are calling from callFromClickButton")
+        var message = document.getElementById("message")
+        console.log(message)
+         message.innerHTML= 'We are calling grom callFromClickButton'
+    }
+    function pingMe()
+    {
+        console.log("We are calling from callFromClickButton")
+        var MouseOverOnThis = document.getElementById("MouseOverOnThis")
+        console.log(MouseOverOnThis)
+        MouseOverOnThis.innerHTML= 'We are calling grom callFromClickButton'
+    }
+    function addition()
+    {
+        console.log("Adding nUmbers")
+        var nUmbers1 = do20cument.getElementById("Num1")
+        var nUmbers2 = document.getElementById("Num2")
+        console.log(nUmbers1.value)
+        console.log(nUmbers2.value)
+        var numbers= parseInt(nUmbers1.value) + parseInt(nUmbers2.value)
+        console.log(numbers)
+
+        var additionResult = document.getElementById("additionResult");
+        additionResult.innerHTML=numbers
+    }
+   
+</Script>
+</head>
+<body>
+
+    <button onclick="callFromClickButton()">click me</button>
+    <button onmouseover="pingMe()">Ping Me</button>
+    <div id="message"></div>
+    <div id="MouseOverOnThis"></div>
+        <form >
+            <div >
+            <label>Enter number1</label>
+            <input type="number" id="Num1">
+            </div>
+            <div >
+            <label>Enter number2</label>
+            <input type="number" id="Num2">
+            </div>
+            <button type="button" onclick="addition()">Add NUMBERS </button>
+            <div id="additionResult"  ></div>
+        </form>
+    
+    
+</body>
+</html>

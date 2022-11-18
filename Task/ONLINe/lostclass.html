@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+        function dispalydate(){
+            console.log("Calling Display Date")
+            var date = new Date()
+            console.log(date)
+            console.log(date.getFullYear())
+            console.log(date.getDay())
+            document.getElementById("html").innerHTML=date
+            document.getElementById("html").style.color="green"
+          //  window.location.href="./Deepthi.png"
+        }
+       var output = function display(){
+            console.log("Calling Display")
+        }
+       // console.log(outpout)
+            output()
+            //Ananymous function
+            var Ananymous = function () {
+                console.log("Calling Ananymous function")
+            }
+            Ananymous()
+            var a ;
+            a = 10;
+            console.log(a)
+            var a ;
+            console.log(a)
+
+            let b;
+            b = "script"
+            console.log(b)
+            // let b ;
+            // console.log(b)
+            // const c ;
+            // String final PI = "3.14"
+            const PI = 3.14;
+            console.log(PI)
+
+            // var, let , const.
+            //How to declare arrays in JS
+            //LOOPING
+            for (let i=0; i<10;i++){
+                console.log("Learning Looping in javaScript")
+            }
+
+            // do {
+            //     console.log("calling do while")
+            // }while()
+            //Array[]
+            let arr = [1,2,3,4,5]
+            console.log(arr)
+            // let arr1 = ["Arun,Shashi,JOSH,AFREEN,HANDIpooja,JAIDEEP"]
+            // console.log(arr1)
+            let arr1 = [1,2,"Java","JavaScript"]
+            console.log(arr1)
+            for(let i=0;i<arr1.length;i++){
+                console.log(arr1[i])
+            }
+            let arr2 = []
+            arr2.push(5)//add an element at end of an array
+            arr2.push(6)
+            arr2.push("Arun")
+            arr2.push("Varun")
+            arr2.push("Josh")
+            arr2.push("Sahshi")
+            console.log(arr2)
+            arr2.pop() //remove as element at end of array
+            console.log(arr2)
+            arr2.unshift(10)//add an element at beginnning of array
+            console.log(arr2)
+            arr2.unshift(11)
+            console.log(arr2)
+            arr2.shift()//remove an element at beginnning of array
+            console.log(arr2)
+            //for array object
+            let movie = {
+                "MovieName":"Kantara","price":200
+            }
+            let movie1 = {
+                "MovieName":"KGF", "Collection":1120
+            }
+            console.log(movie)
+            console.log(movie1)
+
+            let movies = []
+            movies.push(movie)
+            movies.push(movie1)
+            console.log(movies)
+            
+    </script>
+</head>
+<body>
+    <button onclick="dispalydate()">Click on me I ll display date</button>
+    <div id="html"></div>
+
+</body>
+</html>

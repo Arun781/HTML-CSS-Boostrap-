@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validate(){
+                console.log("calling validate function")
+                var UserName=document.getElementById("UserName")
+                console.log(UserName.value)
+                console.log(UserName.value.length)
+                if(UserName.value==""){
+                console.log("please Enter UserName")
+                    var errorUserName=document.getElementById("errorUserName")
+                    errorUserName.innerHTML="please enter UserName"
+                    errorUserName.style.color="blue"
+
+                }
+                var email=document.getElementById("email")
+                console.log(email.value)
+                if(email.value==""){
+                    console.log("please Enter email")
+                    var errorUseremail=document.getElementById("errorUseremail")
+                    errorUseremail.innerHTML="please enter Useremail"
+                    errorUseremail.style.color="blue"
+                }
+                var password=document.getElementById("password")
+                console.log(password.value)
+                if(password.value==""){
+                    console.log("please Enter password")
+                    var errorUserpassword=document.getElementById("errorUserpassword")
+                    errorUserpassword.innerHTML="please enter Userpassword"
+                    errorUserpassword.style.color="blue"
+                }
+                // documnet.form.fieldname
+                var gender=document.formRegister.gender
+                console.log(gender)
+                console.log(gender[0])
+                console.log(gender[1])
+                console.log(gender[2])
+                console.log(gender[0].checked)
+                console.log(gender[1].checked)
+                console.log(gender[2].checked)
+                if(gender[0].checked==false && gender[1].checked==false&&gender[2].checked==false)
+                {
+                    console.log("please enter gender")
+                    gender.innerHTML="please enter Userpassword"
+                    gender.style.color="blue"
+                }
+                
+                
+                
+                var city = document.formRegister.city
+                console.log(city)
+                if (city.value=="0"){
+                    console.log("Please Select City")
+                    city.innerHTML="please enter Userpassword"
+                    city.style.color="blue"
+                }
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <!--form-->
+        <form name="formRegister">
+
+            <div>
+                <label>Enter Username</label>
+                <input type="text" name="UserName" id="UserName" >
+                <div id="errorUserName"></div>
+            </div>
+            <div>
+                <label>Enter email</label>
+                <input type="text" name="email" id="email">
+                <div id="errorUseremail"></div>
+            </div>
+            <div>
+                <label>Enter password</label>
+                <input type="text" name="password" id="password" >
+                <div id="errorUserpassword"></div>
+            </div>
+            <div>
+                <label>Enter gender</label>
+                <input type="radio" name="gender" >male
+                <input type="radio" name="gender" >female
+                <input type="radio" name="gender" >others
+                
+            </div>
+            <div>
+                <label >Select City</label>
+                <select name="city" >
+                    <option> --Select City--</option>
+                    <option >Banalore</option>
+                    <option >Mysore</option>
+                    <option >Goa</option>
+                    <option >Mumbai</option>
+                    <option >Chai</option>
+                    <option >Bidar</option>
+                    <option >Ballari</option>
+                </select>
+            </div>
+            <button type="button" onclick="validate()" >Register</button>
+            <button type="reset" >Reset</button>
+        </form>
+    </body>
+</html>

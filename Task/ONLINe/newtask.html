@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>LoginPage</title>
+    <script>
+        function login(){
+            var email = document.getElementById("email")
+            var password = document.getElementById("password")
+            console.log(email.value)
+            console.log(password.value)
+            var registeredUser = localStorage.getItem("XworkzUser")
+            console.log(registeredUser)
+            var registerObj = JSON.parse(registeredUser)
+            //logic for comparing the value
+            //email, password matching print login success
+            //Email, password not matching print Email or passwors is incorrect
+            console.log(registerObj)
+            if(email.value == registerObj.email &&
+            password.value == registerObj.password){
+                console.log("login sucess");
+                window.location.href = "/"
+            }
+            else{
+                console.log("Invalied email and password")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Enter Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="button" onclick="login()">Login</button>
+        <button>Reset</button>
+    </form>
+    
+</body>
+</html>

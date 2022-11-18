@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function login(){
+           var email=document.getElementById("email") 
+           var password=document.getElementById("password")
+           console.log(email.value)
+           console.log(password.value)
+
+           var registeredUser=localStorage.getItem("xworkzuser")
+           console.log(registeredUser)
+           console.log(registeredUser.email)
+           var registeredObj=JSON.parse(registeredUser)
+           console.log(registeredObj)
+          
+           //logic for comparing the values
+           //email,password matching print login success
+           //email,password notmatching print email or passsword is incorrect
+           //compare values in javascript
+           
+           if(email.value==registeredObj.email &&
+           password.value==registeredObj.password)
+           {
+            console.log("Login Success")
+        }
+            else 
+            {
+                console.log("Invalid email or password")
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Enter email </label>
+            <input type="email"name="email" id="email">
+        </div>
+        <div>
+            <label>Enter Password </label>
+            <input type="password"name="password" id="password">
+        </div>
+        <button type="button" onclick="login()">Login</button>
+        <button>Reset</button>
+    </form>
+    
+</body>
+</html>
